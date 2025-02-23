@@ -4,10 +4,9 @@ import { TopBarComponent } from '../top-bar/top-bar.component';
 
 @Component({
   selector: 'app-main-layout',
-  imports: [CommonModule,TopBarComponent],
+  standalone: true,
+  imports: [CommonModule, TopBarComponent],
   templateUrl: './main-layout.component.html',
-  styleUrl: './main-layout.component.css'
+  styleUrls: ['./main-layout.component.css']
 })
-export class MainLayoutComponent {
-
-}
+export class MainLayoutComponent {}

@@ -55,30 +55,6 @@ form.border-right {
     }
 }
 
-label.error {
-    font-size: 12px;
-    color: red;
-}
-
-#message {
-    resize: vertical;
-}
-
-#form-message-warning,
-#form-message-success {
-    display: none;
-}
-
-#form-message-warning {
-    color: #B90B0B;
-}
-
-#form-message-success {
-    color: #55A44E;
-    font-size: 18px;
-    font-weight: bold;
-}
-
 .submitting {
     float: left;
     width: 100%;
