@@ -1,52 +1,38 @@
+<div id="toast" #toast class="toast"></div>
+
 <div #container class="container">
     <div class="form-box login">
-        <form action="#">
+        <form (submit)="onLogin()">
             <h1>Login</h1>
             <div class="input-box">
-                <input type="text" placeholder="Username" required />
+                <input type="email" [(ngModel)]="email" name="email" placeholder="Email" required />
                 <i class="bx bxs-user"></i>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Password" required />
+                <input type="password" [(ngModel)]="password" name="password" placeholder="Password" required />
                 <i class="bx bxs-lock-alt"></i>
             </div>
-            <div class="forgot-link">
-                <a href="#">Forgot Password?</a>
-            </div>
             <button type="submit" class="btn">Login</button>
-            <p>or login with social platforms</p>
-            <div class="social-icons">
-                <a href="#"><i class="bx bxl-google"></i></a>
-                <a href="#"><i class="bx bxl-facebook"></i></a>
-                <a href="#"><i class="bx bxl-github"></i></a>
-                <a href="#"><i class="bx bxl-linkedin"></i></a>
-            </div>
         </form>
     </div>
 
     <div class="form-box register">
-        <form action="#">
-            <h1>Registration</h1>
+        <form (submit)="onRegister()">
+            <h1>Register</h1>
             <div class="input-box">
-                <input type="text" placeholder="Username" required />
+                <input type="text" [(ngModel)]="username" name="username" placeholder="Username" required />
                 <i class="bx bxs-user"></i>
             </div>
             <div class="input-box">
-                <input type="email" placeholder="Email" required />
+                <input type="email" [(ngModel)]="registerEmail" name="registerEmail" placeholder="Email" required />
                 <i class="bx bxs-envelope"></i>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Password" required />
+                <input type="password" [(ngModel)]="registerPassword" name="registerPassword" placeholder="Password"
+                    required />
                 <i class="bx bxs-lock-alt"></i>
             </div>
             <button type="submit" class="btn">Register</button>
-            <p>or register with social platforms</p>
-            <div class="social-icons">
-                <a href="#"><i class="bx bxl-google"></i></a>
-                <a href="#"><i class="bx bxl-facebook"></i></a>
-                <a href="#"><i class="bx bxl-github"></i></a>
-                <a href="#"><i class="bx bxl-linkedin"></i></a>
-            </div>
         </form>
     </div>
 

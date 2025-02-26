@@ -16,7 +16,7 @@ export const routes: Routes = [
     path: '',
     component: MainLayoutComponent,
     children: [
-      { path: '', component: HomeComponent }, // No redirect, directly loads home
+      { path: 'home', component: HomeComponent }, // No redirect, directly loads home
       { path: 'about', component: AboutComponent },
       { path: 'skills', component: SkillsComponent },
       { path: 'projects', component: ProjectsComponent },

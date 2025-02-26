@@ -1,13 +1,13 @@
-// filepath: /d:/PortFolio/myProject/src/app/email.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from './environment.prod.ts.component';
 
 @Injectable({
   providedIn: 'root',
 })
 export class EmailService {
-  private apiUrl = 'http://localhost:3000/send-email';
+  private apiUrl = `${environment.apiUrl}/send-email`; // Use dynamic URL
 
   constructor(private http: HttpClient) {}
 
